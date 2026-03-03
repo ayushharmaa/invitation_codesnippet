@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Jubilee Invitation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --cream: #FDFAF3;
+      --deep: #1A1209;
+      --maroon: #7A1A2E;
+    }
+
+    body {
+      background: #0D0A05;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+
+    .card-wrapper {
+      perspective: 1000px;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .card {
+      width: min(520px, 94vw);
+      background: var(--cream);
+      box-shadow: 0 40px 120px rgba(201,168,76,0.25);
+      position: relative;
+    }
+
+    .border {
+      height: 6px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+    }
+
+    .inner {
+      padding: 50px 40px;
+      text-align: center;
+    }
+
+    .header {
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .invite-text {
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .event-title {
+      font-size: 50px;
+      color: var(--gold);
+      font-style: italic;
+      margin: 20px 0;
+    }
+
+    .years {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .couple {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    .details {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .venue {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .rsvp {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+
+    .rsvp:hover {
+      background: var(--gold);
+      color: var(--deep);
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 400px) {
+      .event-title { font-size: 36px; }
+      .couple { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card-wrapper">
+  <div class="card">
+
+    <div class="border"></div>
+
+    <div class="inner">
+
+      <div class="header">✦ With Love & Joy ✦</div>
+
+      <div class="invite-text">
+        You are cordially invited to celebrate
+      </div>
+
+      <div class="event-title">
+        Silver Jubilee
+      </div>
+
+      <div class="years">
+        Celebrating 25 Years
+      </div>
+
+      <div class="couple">
+        Mr. John<br>
+        &<br>
+        Mrs. Grace
+      </div>
+
+      <div class="details">
+        <strong>Date:</strong> 30th Feb 2026 (Wednesday)<br>
+        <strong>Time:</strong> 7:00 PM Onwards
+      </div>
+
+      <div class="venue">
+        <strong>Venue:</strong><br>
+        Phase 2 Club House<br>
+        Olive County<br>
+        Ghaziabad
+      </div>
+
+      <div class="rsvp" onclick="this.innerHTML='💛 See You There!'">
+        RSVP · Tap to Confirm
+      </div>
+
+      <div class="contact">
+        <strong>Ayush</strong><br>
+        <a href="tel:+919667209751">+91 XXXXXXXX</a>
+      </div>
+
+    </div>
+
+    <div class="border"></div>
+
+  </div>
+</div>
+
+</body>
+</html>
